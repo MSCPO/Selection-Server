@@ -4,57 +4,50 @@
 		<title>MSCPO服务器评选页</title>
 		<link type="text/css" href="/rs/css/semantic.min.css" rel="stylesheet" />
 		<link type="text/css" href="/rs/css/stylesheet.css" rel="stylesheet" />
+		<link type="text/css" href="/rs/css/styles.css" rel="stylesheet" />
 		<meta name="viewport" content="width=device-width" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+<body>
+    <nav class="ui inverted cuberite-theme cuberite-navigation menu">
+        <div class="ui container" id="cuberite-navigation-container">
+            <a href="/" class="header item">
+                <img src="rs/img/logo.webp" style="margin-right: 1.5em" alt="Logo" class="logo" />
+                <p>服务器评选</p>
+            </a>
 
-					</head>
+            <div class="find-server-dropdown" onclick="toggleFindServerDropdown(event)">
+                <span>找服玩（类型筛选）</span>
+                <ul>
+                    <li><a href="#">生存型服务器</a></li>
+                    <li><a href="#">创造型服务器</a></li>
+                    <li><a href="#">小游戏服务器</a></li>
+                    <li><a href="#">其他服务器</a></li>
+                </ul>
+            </div>
 
-	<body>
-		<nav class="ui inverted cuberite-theme cuberite-navigation menu">
-	<div class="ui container" id="cuberite-navigation-container">
-		<a href="/" class="header item">
-			<img
-				src="/rs/img/logo.webp"
-				style="margin-right: 1.5em"
-				alt="Logo"
-				class="logo"
-			/>
-			<p>服务器评选</p>
-		</a>
+            <div class="hamburger-menu" onclick="toggleMenu()">
+                &#9776; <!-- Unicode character for hamburger icon -->
+            </div>
 
-		
-		<div class="ui  search item">
-	<form action="/" method="get">
-		<div class="ui icon input">
-			<input class="prompt" type="text" placeholder="键入以搜索（目前还是摆设）" name="query" value="" />
-			<i class="search icon"></i>
-		</div>
-	</form>
-</div>
+            <div class="nav-links">
+                <div class="left-links">
+                    <a class="item" href="curation">
+                        <span>精选优质服务器</span>
+                    </a>
+                    <a class="item" href="shoddy">
+                        <span>劣质服务器曝光</span>
+                    </a>
+                </div>
+                <div class="right-links">
+                    <a class="right item" href="https://mscpo.top/">
+                        <span>前往主站</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
 
-        <a
-                class="right item"
-				href="/curation"
-			>
-				<span>精选优质服务器</span>
-			</a>
-			</div>
-			
-			<a
-			    class="right item"
-				href="/shoddy"
-			>
-				<span>劣质服务器曝光</span>
-			</a>
-			</div>
-			
-					<a
-				class="right item"
-				href="https://mscpo.top/"
-			>
-				<span>前往主站</span>
-			</a>
-			</div>
-</nav>
 		
 <main class="ui container" id="cuberite-main-container">
 	<div class="ui hidden divider"></div>
@@ -83,6 +76,7 @@
 			</section>
 </main>
 
+<script src="script.js"></script>
 
 <footer class="ui inverted cuberite-theme cuberite-navigation footer segment">
     <div class="ui center aligned container">
